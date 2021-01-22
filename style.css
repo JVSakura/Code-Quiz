@@ -1,0 +1,31 @@
+  .row {
+    margin-top: 10px;
+  }
+
+  .btn {
+    background-color: blue;
+    color: white;
+  }
+
+  .answer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #highScores {
+    padding-left: 0px;
+  }
+
+  #result {
+    color: black
+  }
+
+  ul li {
+    list-style-type: none;
+    color: black;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 25px;
+  }

@@ -4,93 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CodingQuiz</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <style>
-    .row {
-      margin-top: 1rem;
-    }
-
-    h1 {
-      font-weight: 700;
-      font-size: 2rem;
-    }
-
-    .btn {
-      background-color: purple;
-      color: white;
-    }
-
-    ul li {
-      list-style-type: none;
-      color: white;
-    }
-
-    .answer {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    #highScores {
-      padding-left: 0px;
-    }
-
-    .listOdd {
-      background-color: #bf80ff;
-      text-shadow: 1px 1px black;
-      ;
-    }
-
-    .listEven {
-      background-color: #b366ff;
-      text-shadow: 1px 1px black;
-    }
-
-    #goBack {
-      width: fit-content;
-    }
-
-    hr {
-      border-top: 0.5rem solid rgba(0, 0, 0, .1)
-    }
-
-    #result {
-      color: rgba(0, 0, 0, .5)
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body id="body">
   <nav class="row">
-    <div class="col-md-11">
+    <div class="col-md-10">
       <button type="button" id="viewScores" class="viewScores">View High Scores</button>
     </div>
-    <div class="col-md-1">
-      <span id="clock"></span>
+    <div class="col-md-2">
+      <h1 id="clock"></h1>
     </div>
   </nav>
   <div class="container">
     <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h1 id="heading"></h1>
+      </div>
       <div class="col-md-2">
 
       </div>
-      <div class="col-md-8">
-        <h1 id="heading">
-          This is a heading
-        </h1>
-      </div>
-      <div class="col-md-2"></div>
     </div>
     <div class="row">
       <div class="col-md-2">
 
       </div>
       <div class="col-md-8">
-        <p id="desc">
-          And a description
-        </p>
+        <p id="description"> </p>
       </div>
     </div>
     <div class="col-md-2">
@@ -108,8 +52,8 @@
         <li><button type="button" id="answer4" class="btn answer" value="3">Answer4</button></li>
       </ul>
 
-      <form id="enterName">
-        <label id="label">Enter Initials:</label>
+      <form id="yourName">
+        <label id="label">Enter name:</label>
         <input type="text" id="input">
         <button type="submit" id="submit" class="btn submit">Submit</button>
       </form>
@@ -117,7 +61,7 @@
 
       <ul id="highScores">
       </ul>
-      <a href="./index.html" id="goBack" class="btn">Go Back</a>
+      <a href="./index.html" id="restart" class="btn">Restart</a>
       <button type="button" id="clear" class="btn clear">Clear Scores</button>
 
       <hr id="line">
@@ -127,8 +71,7 @@
     </div>
   </div>
   <script src="./script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
