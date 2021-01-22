@@ -64,25 +64,25 @@ result.style.display = `none`
 
 resultTimer = undefined;
 
-questions.push(`What does HTML stand for?`)
-wrongAnswers.push([`HyperTextMarkupLanguage`, `Hit the man low`, `How to make lasagna`, `None of the above`])
-correctAnswers.push(`HyperTextMarkupLanguage`)
+questions.push(`How long does it take for sunlight to reach the earth's surface??`)
+wrongAnswers.push([`8 minutes`, `1 hour`, `6 hours`, `1 day`])
+correctAnswers.push(`8 minutes`)
 
-questions.push(`What does CSS stand for?`)
-wrongAnswers.push([`Computer Style Sections`, `Computers So Stupid`, `Crazy Solid Shapes`, `None of the above`])
-correctAnswers.push(`Cascading Style Sheets`)
+questions.push(`Which of these is a cyrillic language?`)
+wrongAnswers.push([`Greek`, `English`, `Russian`, `Chinese`])
+correctAnswers.push(`Russian`)
 
-questions.push(`How many times will this Loop run: for(let i = 0; i < 10; i += 2)`)
-wrongAnswers.push([`Four times`, `Two times`, `Eight times`, `Twenty Times times`])
-correctAnswers.push(`Five times`)
+questions.push(`How many hours are you supposed to study coding in a week?`)
+wrongAnswers.push([`0-5 hours`, `6-10 hours`, `11-15 hours`, `16-20 hours`])
+correctAnswers.push(`16-20 hours`)
 
-questions.push(`What symbol is used to mark an id?`)
-wrongAnswers.push([`+`, `+`, `!`, `%`])
-correctAnswers.push(`#`)
+questions.push(`What is the most profitable franchise in the world?`)
+wrongAnswers.push([`Fast&Furious`, `Disney`, `Star Wars`, `Pokemon`])
+correctAnswers.push(`Pokemon`)
 
-questions.push(`What does DOM stand for?`)
-wrongAnswers.push([`Don't Omit Mistakes`, `Dancing On Monday`, `Document Object Marker`, `Don't Organize Modals`])
-correctAnswers.push(`Document Object Model`)
+questions.push(`What would happen if the stomach did not have a protective layer of mucus?`)
+wrongAnswers.push([`It would dissolve itself`, `It would live the life of Riley`, `Nausea`, `I don't care, I'm not a Doctor`])
+correctAnswers.push(`It would dissolve itself`)
 
 let answers = []
 answers.push(document.getElementById(`answer1`))
