@@ -64,25 +64,25 @@ result.style.display = `none`
 
 resultTimer = undefined;
 
-questions.push(`How long does it take for sunlight to reach the earth's surface??`)
-wrongAnswers.push([`8 minutes`, `1 hour`, `6 hours`, `1 day`])
-correctAnswers.push(`8 minutes`)
+questions.push(`Commonly used data types DO NOT include:`)
+wrongAnswers.push([`strings`, `booleans`, `alerts`, `numbers`])
+correctAnswers.push(`alerts`)
 
-questions.push(`Which of these is a cyrillic language?`)
-wrongAnswers.push([`Greek`, `English`, `Russian`, `Chinese`])
-correctAnswers.push(`Russian`)
+questions.push(`The condition in an if/else statement is enclosed within:`)
+wrongAnswers.push([`quotes`, `curly brackets`, `parentheses`, `square brackets`])
+correctAnswers.push(`parentheses`)
 
-questions.push(`How many hours are you supposed to study coding in a week?`)
-wrongAnswers.push([`0-5 hours`, `6-10 hours`, `11-15 hours`, `16-20 hours`])
-correctAnswers.push(`16-20 hours`)
+questions.push(`Arrays in JavaScript can be used to store:`)
+wrongAnswers.push([`numbers and strings`, `other arrays`, `booleans`, `all of the above`])
+correctAnswers.push(`all of the above`)
 
-questions.push(`What is the most profitable franchise in the world?`)
-wrongAnswers.push([`Fast&Furious`, `Disney`, `Star Wars`, `Pokemon`])
-correctAnswers.push(`Pokemon`)
+questions.push(`String values must be enclosed within ____ when being assigned to variables.`)
+wrongAnswers.push([`commas`, `curly brackets`, `quotes`, `parentheses`])
+correctAnswers.push(`quotes`)
 
-questions.push(`What would happen if the stomach did not have a protective layer of mucus?`)
-wrongAnswers.push([`It would dissolve itself`, `It would live the life of Riley`, `Nausea`, `I don't care, I'm not a Doctor`])
-correctAnswers.push(`It would dissolve itself`)
+questions.push(`A very useful tool used during development and debugging for printing content to the debugger is:`)
+wrongAnswers.push([`JavaScript`, `terminal/bash`, `for loops`, `console.log`])
+correctAnswers.push(`console.log`)
 
 let answers = []
 answers.push(document.getElementById(`answer1`))
@@ -117,7 +117,7 @@ const startPage = () => {
   heading.textContent = "Coding Quiz"
   heading.style.textAlign = "center"
   description.style.display = "block"
-  description.textContent = "This quiz will test your basic knowledge of coding. You will have 60 seconds to finish, if you get a questions wrong you will lose 5 seconds."
+  description.textContent = "Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answerd will penalize your scortime by ten seconds!"
 
   description.style.textAlign = "center"
   answerButtons.style.display = "none"
@@ -162,7 +162,7 @@ const startQuiz = () => {
 const endQuiz = () => {
   clearInterval(quizInterval)
   clock.textContent = ``
-  timer += -5 * randQuestions.length
+  timer += -10 * randQuestions.length
 
   heading.innerHTML = `All done!`
   form.style.display = `block`
@@ -202,7 +202,7 @@ const checkAnswer = (answer) => {
     result.textContent = "Correct!"
   } else {
     result.textContent = "Wrong!"
-    timer -= 5
+    timer -= 10
     clock.textContent = `Time: ${timer}`
   }
 
